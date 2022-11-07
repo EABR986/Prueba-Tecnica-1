@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --body: #181A31;
+    --text: #6E7089;
+    --link: #fff;
+    --link-hover: #7E4CE3;
+    --primary: #0082ff;
+    --secondary: #0082ff;
+    --dark: #000;
+    --light: #fff;
+    --gray-dark: #181A31;
+    --gray-light: rgba(255, 255, 255, .1);
+    --gray: #24263A;
+    --success: #00e89b;
+    --danger: #e800a2;
+    --warning: #e8d900;
+    --size: 1rem;
+    --size-b: 1rem;
+    --f-size: 1rem;
+   font-family: 'Roboto', sans-serif; 
+   z-index: -1;
+    --family: Roboto,'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.cardImg:hover{
+    cursor: pointer;
+    border: 4px solid #ffffff;
+    box-shadow: 2px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px 6px #ccc;; 
+    opacity: 0.3;
+    height: 100%;
+}
+main{
+    background-color: #181A31;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.movieCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subHeader{
+    text-transform: uppercase;
+    color: var(--primary);
+    text-shadow: var(--primary) 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+   
+} 
+
+.Logo{
+    width: 150px;
+    height: 30px;
+  
+}
+.heroImg{
+    
+   box-shadow: var(--primary) 0 0 6rem;
+}
+
+.header{
+    box-shadow: inset 0px 10px 10px 0 rgb(0, 0, 0);
+}
+
+
+
+.modalContainer{
+    max-width: 200px;
+    max-height: 500px;
+    
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.704);
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
+    transition: opacity 0.5s ease-in-out;
+    font-size: 13px ;
+    font-weight: 800;
+    border:rgb(255, 255, 255) 2px solid;
+    box-shadow: 0 0 18px 0 rgba(255, 255, 255, 0.75);
+    
+}
+.modalImg{
+    width: 100%;
+    height: 30%;
+  
+}
+
+@media screen and ( min-width:  1300px ) {
+    .modalContainer{
+        max-width: 400px;
+        max-height: 700px;
+        top: 50%;
+        left: 50%;
+    }
+    .modalImg{
+        width: 100%;
+        height: 30%;
+    }
+}
+@media screen and ( min-width:  2500px ) {
+    .modalContainer{
+        max-width: 700px;
+        max-height: 1400px;
+        top: 50%;
+        left: 50%;
+        font-size: 20px ;
+    }
+    .modalImg{
+        width: 100%;
+        height: 30%;
+    }
+}
+
+
+.modalClose{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+}
+ @media screen { 
+    
+ }
